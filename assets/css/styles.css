@@ -49,11 +49,21 @@ a{color:inherit}
   display:flex; align-items:center; justify-content:space-between;
   padding:12px 0;
 }
+
 .brand{
-  display:flex; align-items:center; gap:10px;
+  display:flex;
+  align-items:flex-start;   /* logo “em cima” do texto */
+  gap:10px;
   text-decoration:none;
 }
-.brand img{width:40px;height:40px; object-fit:contain}
+
+.brand img{
+  width:44px;
+  height:44px;
+  object-fit:contain;
+  margin-top:2px;           /* leve ajuste pra ficar bem “top-left” */
+}
+
 .brand .title{
   display:flex; flex-direction:column; line-height:1.1;
 }
