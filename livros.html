@@ -3,98 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Livros | Instituto Ana Néri (INAN)</title>
-  <meta name="description" content="Livraria do INAN: obras espíritas, autores e horários." />
+  <title>Livros • Instituto Ana Néri (INAN)</title>
+  <meta name="description" content="Livraria do INAN: missão, acervo e horários." />
+  <link rel="icon" href="assets/img/logo.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="index.html">
-      <div class="brand-mark">IN</div>
-      <div class="brand-name">
-        <strong>Instituto Ana Néri | INAN</strong>
-        <span>Grupo Espírita Ana Néri</span>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo do Instituto Ana Néri" onerror="this.style.display='none'">
+        <div class="title">
+          <strong>Instituto Ana Néri (INAN)</strong>
+          <span>Livros</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu">☰ Menu</button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="ajude.html">Ajude</a>
+        <a class="active" href="livros.html">Livros</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="kicker"><span class="dot"></span> Livraria do INAN</span>
+            <h1>Dê livros de presente!</h1>
+            <p>
+              A livraria tem por missão auxiliar na difusão da Doutrina Espírita,
+              com obras alinhadas à Codificação Kardequiana. :contentReference[oaicite:10]{index=10}
+            </p>
+
+            <div class="actions">
+              <a class="btn primary" href="#horarios">Ver horários</a>
+              <a class="btn" href="contato.html">Como chegar</a>
+            </div>
+          </div>
+
+          <aside class="hero-side" id="horarios">
+            <h3>Horário de funcionamento</h3>
+            <p style="margin:0;color:var(--muted)">
+              Domingos e segundas-feiras<br>
+              <strong>19h às 21h</strong>
+            </p>
+            <p class="small" style="margin-top:10px">Conforme página “Livros”. :contentReference[oaicite:11]{index=11}</p>
+          </aside>
+        </div>
       </div>
-    </a>
-
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="historia.html">História</a>
-      <a href="atividades.html">Atividades</a>
-      <a href="ajude.html">Ajude</a>
-      <a href="livros.html">Livros</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-
-    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-  </div>
-
-  <div class="mobile-nav wrap" id="mobileNav">
-    <a href="index.html">Início</a>
-    <a href="historia.html">História</a>
-    <a href="atividades.html">Atividades</a>
-    <a href="ajude.html">Ajude</a>
-    <a href="livros.html">Livros</a>
-    <a href="contato.html">Contato</a>
-  </div>
-</header>
-
-<main class="wrap page">
-  <h1>Livros</h1>
-  <p class="sub">
-    A página “Livros” do site antigo descreve a livraria como um espaço para difusão da Doutrina Espírita,
-    com obras alinhadas à Codificação Kardequiana.
-  </p>
-
-  <div class="grid cards-3">
-    <section class="card item">
-      <h3>O que você encontra</h3>
-      <p>
-        Romances, mensagens, crônicas, biografias, obras científico-doutrinárias e infantis.
-      </p>
     </section>
 
-    <section class="card item">
-      <h3>Autores citados</h3>
-      <p>
-        Obras psicografadas por Chico Xavier (André Luiz, Emmanuel, Humberto de Campos, entre outros),
-        Yvonne A. Pereira, Divaldo Franco, Vera Lúcia Marinzeck, João Nunes Maia.
-      </p>
+    <section class="section">
+      <div class="container">
+        <h2>Pagamento</h2>
+        <div class="card">
+          <p style="margin:0;color:var(--muted)">
+            A livraria aceita PIX, além de cartões de crédito e débito. :contentReference[oaicite:12]{index=12}
+          </p>
+        </div>
+      </div>
     </section>
-
-    <section class="card item">
-      <h3>Pagamento e horário</h3>
-      <p>
-        A livraria aceita PIX e cartões de crédito/débito.<br/>
-        <strong>Funcionamento:</strong> domingos e segundas | 19h às 21h.
-      </p>
-    </section>
-  </div>
-
-  <div class="card item" style="margin-top:1rem">
-    <h3>Visite</h3>
-    <p>Faça-nos uma visita e seja bem-vindo(a)!</p>
-  </div>
+  </main>
 
   <footer class="footer">
-    <div class="card footer-card">
-      <div class="footer-left">
-        <strong>Instituto Ana Néri — INAN</strong>
-        <span class="muted">Av. Dr. Sérvulo Teixeira, 631 — Alto Esplanada, Gov. Valadares — MG</span>
-        <span class="muted">CNPJ: 38.513.644/0001-56</span>
+    <div class="container footer-inner">
+      <div class="small">
+        <strong>Instituto Ana Néri (INAN)</strong><br>
+        Av. Dr. Sérvulo Teixeira, 631 — Alto Esplanada — Gov. Valadares — MG
       </div>
-      <div class="footer-right">
-        <a class="badge" href="index.html">Início</a>
-        <a class="badge" href="ajude.html">Ajude</a>
-        <a class="badge" href="contato.html">Contato</a>
-        <span class="badge">© <span id="year"></span></span>
+      <div class="small">
+        <a href="https://www.youtube.com/@instituto_ananeri" target="_blank" rel="noopener">YouTube</a> •
+        <a href="https://www.instagram.com/instituto_ananeri/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </footer>
-</main>
-
-<script src="assets/js/main.js"></script>
 </body>
 </html>

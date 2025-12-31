@@ -3,143 +3,142 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Instituto Ana Néri | INAN</title>
-  <meta name="description" content="Instituto Ana Néri (INAN) — palestras ao vivo, evangelização, coral espírita e promoção social." />
+  <title>Instituto Ana Néri (INAN)</title>
+  <meta name="description" content="Instituto Ana Néri (INAN) — atividades, palestras, promoção social e difusão da Doutrina Espírita." />
+  <link rel="icon" href="assets/img/logo.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="index.html">
-      <div class="brand-mark">IN</div>
-      <div class="brand-name">
-        <strong>Instituto Ana Néri | INAN</strong>
-        <span>Grupo Espírita Ana Néri</span>
-      </div>
-    </a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo do Instituto Ana Néri" onerror="this.style.display='none'">
+        <div class="title">
+          <strong>Instituto Ana Néri (INAN)</strong>
+          <span>Governador Valadares — MG</span>
+        </div>
+      </a>
 
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="historia.html">História</a>
-      <a href="atividades.html">Atividades</a>
-      <a href="ajude.html">Ajude</a>
-      <a href="livros.html">Livros</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu">
+        ☰ Menu
+      </button>
 
-    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-  </div>
+      <nav class="nav" data-nav>
+        <a class="active" href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="ajude.html">Ajude</a>
+        <a href="livros.html">Livros</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="mobile-nav wrap" id="mobileNav">
-    <a href="index.html">Início</a>
-    <a href="historia.html">História</a>
-    <a href="atividades.html">Atividades</a>
-    <a href="ajude.html">Ajude</a>
-    <a href="livros.html">Livros</a>
-    <a href="contato.html">Contato</a>
-  </div>
-</header>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="kicker"><span class="dot"></span> Bem-vindo(a) ao INAN</span>
+            <h1>Instituto Ana Néri (INAN)</h1>
+            <p>
+              Uma organização sem fins lucrativos fundamentada na Doutrina Espírita, dedicada à caridade
+              espiritual, moral e material e a ações de promoção social, estudos e acolhimento fraterno.
+            </p>
 
-<main>
-  <section class="hero wrap">
-    <div class="hero-grid">
-      <div class="hero-copy card">
-        <div class="kicker"><span class="dot"></span> Bem-vindo(a) ao INAN</div>
-        <h1>Espiritualidade, acolhimento e serviço ao próximo.</h1>
-        <p class="lead">
-          Acompanhe nossa programação e participe das atividades do Instituto Ana Néri (INAN).
-          Também realizamos ações de <strong>Promoção Social</strong> por meio do Projeto Pão Nosso.
-        </p>
+            <div class="actions">
+              <a class="btn primary" href="atividades.html#programacao">Ver detalhes da programação</a>
+              <a class="btn gold" href="ajude.html">Como ajudar</a>
+            </div>
+          </div>
 
-        <div class="actions">
-          <a class="btn primary link" href="atividades.html">ver atividades</a>
-          <a class="btn link" href="ajude.html">ajudar / doações</a>
-          <a class="btn link" href="livros.html">livraria</a>
+          <aside class="hero-side" aria-label="Horários de palestras ao vivo">
+            <h3>Palestras AO VIVO</h3>
+            <p>*horário de Brasília</p>
+            <div class="time">
+              <span class="badge">Domingos • 19h30</span>
+              <span class="badge">Segundas • 19h45</span>
+            </div>
+            <p style="margin-top:10px;font-size:13.5px;color:var(--muted)">
+              Acompanhe pelo nosso canal no YouTube.
+            </p>
+          </aside>
         </div>
       </div>
+    </section>
 
-      <aside class="hero-side card">
-        <div class="panel">
-          <h3>Palestras ao vivo</h3>
-          <p>
-            <strong>Domingos às 19h30</strong> e <strong>segundas às 19h45</strong><br/>
-            <span style="color:rgba(255,255,255,.65)"><em>horário de Brasília</em></span>
+    <section class="section">
+      <div class="container">
+        <h2>O que você encontra no INAN</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Palestra Pública</h3>
+            <p>Momentos de reflexão, aprendizado e convivência fraterna.</p>
+          </div>
+          <div class="card">
+            <h3>Coral Espírita</h3>
+            <p>Harmonização e música como caminho de elevação e acolhimento.</p>
+          </div>
+          <div class="card">
+            <h3>Evangelização</h3>
+            <p>Atividades voltadas à formação moral e espiritual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Últimos vídeos do nosso canal</h2>
+        <div id="ytGrid" class="yt-grid"></div>
+
+        <div style="margin-top:10px">
+          <a class="btn" href="https://www.youtube.com/@instituto_ananeri" target="_blank" rel="noopener">
+            Abrir canal no YouTube
+          </a>
+          <a class="btn" href="https://www.instagram.com/instituto_ananeri/" target="_blank" rel="noopener">
+            Abrir Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Onde estamos</h2>
+        <div class="card">
+          <p style="margin:0">
+            <strong>Endereço:</strong> Av. Dr. Sérvulo Teixeira, 631 — Alto Esplanada, Governador Valadares — MG<br>
+            <strong>CNPJ:</strong> 38.513.644/0001-56
           </p>
-
-          <div class="pills">
-            <div class="pill">Palestra Pública</div>
-            <div class="pill">Evangelização</div>
-            <div class="pill">Coral Espírita (GV)</div>
-          </div>
+          <p class="small" style="margin-top:10px">
+            Dica: você pode colocar aqui um mapa (iframe) quando quiser.
+          </p>
         </div>
-
-        <hr class="sep"/>
-
-        <div class="panel">
-          <h3>Seja voluntário(a)</h3>
-          <p>Tem interesse em contribuir com as tarefas e atividades? Preencha o formulário e entraremos em contato.</p>
-          <div class="actions" style="margin-top:.85rem">
-            <a class="btn primary link" href="voluntario.html">preencher formulário</a>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section wrap">
-    <div class="section-head">
-      <h2>Em destaque</h2>
-      <p>Conheça rapidamente as frentes que aparecem no site antigo do INAN.</p>
-    </div>
-
-    <div class="grid cards-3">
-      <div class="card item">
-        <h3>Programação</h3>
-        <p>
-          Atividades como <strong>Palestra Pública</strong>, <strong>Evangelização</strong> e <strong>Coral Espírita</strong>
-          fazem parte da vivência da casa.
-        </p>
-        <a class="inline" href="atividades.html">ver detalhes →</a>
       </div>
+    </section>
 
-      <div class="card item">
-        <h3>Promoção Social</h3>
-        <p>
-          Campanha para aquisição de <strong>filtros</strong> para famílias atendidas pelo Projeto Pão Nosso,
-          com doações via PIX e site do projeto.
-        </p>
-        <a class="inline" href="ajude.html">como ajudar →</a>
-      </div>
+  </main>
 
-      <div class="card item">
-        <h3>Livraria</h3>
-        <p>
-          Obras espíritas (romances, mensagens, infantis etc.), com pagamento via PIX e cartões.
-          Funcionamento: domingos e segundas (19h–21h).
-        </p>
-        <a class="inline" href="livros.html">ver livraria →</a>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Instituto Ana Néri (INAN)</strong>
+        <div class="small">Caridade, estudo e acolhimento fraterno.</div>
       </div>
-    </div>
-  </section>
-
-  <footer class="footer wrap">
-    <div class="card footer-card">
-      <div class="footer-left">
-        <strong>Instituto Ana Néri — INAN</strong>
-        <span class="muted">Av. Dr. Sérvulo Teixeira, 631 — Alto Esplanada, Gov. Valadares — MG</span>
-        <span class="muted">CNPJ: 38.513.644/0001-56</span>
-      </div>
-      <div class="footer-right">
-        <a class="badge" href="ajude.html">Ajude</a>
-        <a class="badge" href="livros.html">Livros</a>
-        <a class="badge" href="contato.html">Contato</a>
-        <span class="badge">© <span id="year"></span></span>
+      <div class="small">
+        <div><a href="https://www.youtube.com/@instituto_ananeri" target="_blank" rel="noopener">YouTube</a> • <a href="https://www.instagram.com/instituto_ananeri/" target="_blank" rel="noopener">Instagram</a></div>
+        <div>© <span id="year"></span> INAN</div>
       </div>
     </div>
   </footer>
-</main>
 
-<script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

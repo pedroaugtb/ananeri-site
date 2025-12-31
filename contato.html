@@ -3,87 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contato | INAN</title>
+  <title>Contato • Instituto Ana Néri (INAN)</title>
   <meta name="description" content="Contato e localização do Instituto Ana Néri (INAN)." />
+  <link rel="icon" href="assets/img/logo.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="index.html">
-      <div class="brand-mark">IN</div>
-      <div class="brand-name">
-        <strong>Instituto Ana Néri | INAN</strong>
-        <span>Grupo Espírita Ana Néri</span>
-      </div>
-    </a>
-
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="historia.html">História</a>
-      <a href="atividades.html">Atividades</a>
-      <a href="ajude.html">Ajude</a>
-      <a href="livros.html">Livros</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-
-    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-  </div>
-
-  <div class="mobile-nav wrap" id="mobileNav">
-    <a href="index.html">Início</a>
-    <a href="historia.html">História</a>
-    <a href="atividades.html">Atividades</a>
-    <a href="ajude.html">Ajude</a>
-    <a href="livros.html">Livros</a>
-    <a href="contato.html">Contato</a>
-  </div>
-</header>
-
-<main class="wrap page">
-  <h1>Contato</h1>
-  <p class="sub">Endereço e informações institucionais conforme o rodapé do site antigo.</p>
-
-  <div class="grid cards-3">
-    <section class="card item">
-      <h3>Endereço</h3>
-      <p>Av. Dr. Sérvulo Teixeira, 631</p>
-      <p style="margin-top:.3rem;color:rgba(255,255,255,.72)">Alto Esplanada — Gov. Valadares — MG</p>
-      <a class="inline" href="https://www.google.com/maps/search/?api=1&query=Av.%20Dr.%20S%C3%A9rvulo%20Teixeira%2C%20631%20-%20Alto%20Esplanada%2C%20Gov.%20Valadares%20-%20MG" target="_blank" rel="noopener">
-        abrir no mapa →
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo do Instituto Ana Néri" onerror="this.style.display='none'">
+        <div class="title">
+          <strong>Instituto Ana Néri (INAN)</strong>
+          <span>Contato</span>
+        </div>
       </a>
-    </section>
 
-    <section class="card item">
-      <h3>CNPJ</h3>
-      <p><strong>38.513.644/0001-56</strong></p>
-    </section>
+      <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu">☰ Menu</button>
 
-    <section class="card item">
-      <h3>Atalhos</h3>
-      <p>
-        <a class="inline" href="ajude.html">Ajude →</a><br/>
-        <a class="inline" href="livros.html">Livros →</a><br/>
-        <a class="inline" href="voluntario.html">Seja voluntário(a) →</a>
-      </p>
+      <nav class="nav" data-nav>
+        <a href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="ajude.html">Ajude</a>
+        <a href="livros.html">Livros</a>
+        <a href="sobre.html">Sobre</a>
+        <a class="active" href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="kicker"><span class="dot"></span> Fale conosco</span>
+            <h1>Contato</h1>
+            <p>
+              Para avisos, links e atividades virtuais, acompanhe as redes oficiais do Instituto.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="https://www.instagram.com/instituto_ananeri/" target="_blank" rel="noopener">Instagram</a>
+              <a class="btn" href="https://www.youtube.com/@instituto_ananeri" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+
+          <aside class="hero-side">
+            <h3>Endereço</h3>
+            <p style="margin:0;color:var(--muted)">
+              Av. Dr. Sérvulo Teixeira, 631<br>
+              Alto Esplanada — Gov. Valadares — MG
+            </p>
+            <div style="margin-top:10px">
+              <a class="btn gold" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Av.+Dr.+S%C3%A9rvulo+Teixeira%2C+631+-+Alto+Esplanada%2C+Gov.+Valadares+-+MG">
+                Abrir no Google Maps
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
     </section>
-  </div>
+  </main>
 
   <footer class="footer">
-    <div class="card footer-card">
-      <div class="footer-left">
-        <strong>Instituto Ana Néri — INAN</strong>
-        <span class="muted">CNPJ: 38.513.644/0001-56</span>
+    <div class="container footer-inner">
+      <div class="small">
+        <strong>Instituto Ana Néri (INAN)</strong><br>
+        CNPJ: 38.513.644/0001-56
       </div>
-      <div class="footer-right">
-        <a class="badge" href="index.html">Início</a>
-        <span class="badge">© <span id="year"></span></span>
+      <div class="small">
+        <a href="ajude.html">Ajude</a> • <a href="livros.html">Livros</a>
       </div>
     </div>
   </footer>
-</main>
-
-<script src="assets/js/main.js"></script>
 </body>
 </html>

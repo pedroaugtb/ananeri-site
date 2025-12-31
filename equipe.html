@@ -3,85 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Equipe — Instituto Ana Neri</title>
-  <meta name="description" content="Equipe e governança do Instituto Ana Neri." />
-  <link rel="canonical" href="https://ananeri.org/equipe.html" />
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>Equipe • Instituto Ana Néri (INAN)</title>
+  <meta name="description" content="Equipe e voluntariado no Instituto Ana Néri (INAN)." />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="/">
-        <img class="brand-logo" src="/assets/img/logo.svg" alt="Logo do Instituto Ana Neri" />
-        <span class="brand-name">Instituto Ana Neri</span>
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo do Instituto Ana Néri" onerror="this.style.display='none'">
+        <div class="title">
+          <strong>Instituto Ana Néri (INAN)</strong>
+          <span>Equipe</span>
+        </div>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="nav" class="nav">
-        <a class="nav-link" href="/sobre.html">Sobre</a>
-        <a class="nav-link" href="/atuacao.html">Atuação</a>
-        <a class="nav-link active" href="/equipe.html">Equipe</a>
-        <a class="nav-link" href="/contato.html">Contato</a>
-        <a class="nav-cta" href="/contato.html#apoie">Apoie</a>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu">☰ Menu</button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="ajude.html">Ajude</a>
+        <a href="livros.html">Livros</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main class="page">
-    <div class="container">
-      <header class="page-header">
-        <h1>Equipe</h1>
-        <p class="lead">Apresente pessoas e governança com clareza e credibilidade.</p>
-      </header>
-
-      <section class="block">
-        <h2>Diretoria</h2>
-        <div class="grid team">
-          <article class="person">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h3>Nome Sobrenome</h3>
-              <p class="muted">Cargo (ex.: Diretoria Executiva)</p>
-              <p>Mini bio de 1–2 frases. (Formação, experiência, atuação.)</p>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="kicker"><span class="dot"></span> Voluntariado</span>
+            <h1>Equipe e colaboradores</h1>
+            <p>
+              O INAN é sustentado por trabalho voluntário e fraterno. Se você deseja contribuir, preencha o formulário e o Instituto entrará em contato. :contentReference[oaicite:14]{index=14}
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="https://sites.google.com/ananeri.org/site/seja-volunt%C3%A1rio" target="_blank" rel="noopener">Quero ser voluntário</a>
+              <a class="btn" href="contato.html">Falar com o INAN</a>
             </div>
-          </article>
+          </div>
 
-          <article class="person">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h3>Nome Sobrenome</h3>
-              <p class="muted">Cargo</p>
-              <p>Mini bio.</p>
-            </div>
-          </article>
+          <aside class="hero-side">
+            <h3>Como funciona</h3>
+            <p style="margin:0;color:var(--muted)">
+              Você marca as áreas de interesse e a equipe retorna quando houver necessidade.
+            </p>
+          </aside>
         </div>
-      </section>
-
-      <section class="block">
-        <h2>Conselho / Comitês</h2>
-        <div class="grid team">
-          <article class="person">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h3>Nome Sobrenome</h3>
-              <p class="muted">Conselho (placeholder)</p>
-              <p>Mini bio.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer simple">
-    <div class="container footer-bottom">
-      <span class="muted">© <span id="year"></span> Instituto Ana Neri.</span>
-      <a class="muted" href="/">Voltar ao início</a>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="small"><strong>Instituto Ana Néri (INAN)</strong></div>
+      <div class="small">
+        <a href="https://www.instagram.com/instituto_ananeri/" target="_blank" rel="noopener">Instagram</a>
+      </div>
     </div>
   </footer>
-
-  <script src="/assets/js/main.js"></script>
 </body>
 </html>
