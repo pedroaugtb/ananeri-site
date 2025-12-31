@@ -1,33 +1,22 @@
 (function () {
-  // Ano no rodapé
-  var el = document.getElementById("year");
-  if (el) el.textContent = String(new Date().getFullYear());
-
-  // Menu mobile
-  var btn = document.querySelector(".nav-toggle");
-  var nav = document.getElementById("nav");
-
+  // menu mobile
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("mobileNav");
   if (btn && nav) {
-    btn.addEventListener("click", function () {
-      var isOpen = nav.classList.toggle("open");
-      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
-    // Fecha menu ao clicar em link
-    nav.addEventListener("click", function (e) {
-      var t = e.target;
-      if (t && t.tagName === "A") {
+    nav.addEventListener("click", (e) => {
+      if (e.target && e.target.tagName === "A") {
         nav.classList.remove("open");
         btn.setAttribute("aria-expanded", "false");
       }
     });
-
-    // Fecha ao clicar fora
-    document.addEventListener("click", function (e) {
-      if (!nav.classList.contains("open")) return;
-      if (nav.contains(e.target) || btn.contains(e.target)) return;
-      nav.classList.remove("open");
-      btn.setAttribute("aria-expanded", "false");
-    });
   }
+
+  // ano
+  const y = document.getElementById("year");
+  if (y) y.textContent = String(new Date().getFullYear());
 })();
