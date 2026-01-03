@@ -205,6 +205,11 @@ h1{
   color:var(--text);
 }
 
+.hero{
+  background: url("../img/hero.jpg") center/cover no-repeat;
+}
+
+
 /* Sections */
 .section{padding:22px 0}
 .section h2{
